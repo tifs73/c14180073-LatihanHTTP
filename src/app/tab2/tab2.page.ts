@@ -11,10 +11,8 @@ export class Tab2Page implements OnInit {
 
   dataPOST = []; //untuk menampung data
   post : any = [];
-  loading : any;
 
   constructor(private http: HttpClient, private loadCtrl : LoadingController, private toastCtrl : ToastController) {
-    this.loading;
   }
 
   ngOnInit() {
