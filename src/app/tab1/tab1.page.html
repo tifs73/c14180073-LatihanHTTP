@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tab1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button color="light" routerLink="/tab2">
+        <ion-icon name="arrow-redo-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let dPOST of dataPOST">
+      <ion-avatar>
+        <img src={{dPOST.avatar}}>
+      </ion-avatar>
+      <ion-label>
+        Id : {{dPOST.id}} <br>
+        Email : {{dPOST.email}} <br>
+        First name : {{dPOST.first_name}} <br>
+        Last name : {{dPOST.last_name}} <br>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
